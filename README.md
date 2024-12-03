@@ -2,12 +2,12 @@
 
 
 
-## Source Code: (1/25) Done  
+## Source Code: (2/25) Done  
 
 | M  | T  | W  | T  | F  | S  | S  |
 |----|----|----|----|----|----|----|
 |    |    |    |    |    |    |  [1](day01/src/main.rs) |
-|  X |  X |  X |  X |  X |  X |  X |
+|  [2](day02/src/main.rs) |  3 |  X |  X |  X |  X |  X |
 |  X |  X |  X |  X |  X |  X |  X |
 |  X |  X |  X |  X |  X |  X |  X |
 |  X |  X |  X |
