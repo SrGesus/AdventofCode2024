@@ -7,7 +7,7 @@
 | M  | T  | W  | T  | F  | S  | S  |
 |----|----|----|----|----|----|----|
 |    |    |    |    |    |    |  [1](day01/src/main.rs) |
-|  [2](day02/src/main.rs) |  3 |  X |  X |  X |  X |  X |
+|  [2](day02/src/main.rs) |  [3](day03/src/main.rs) |  X |  X |  X |  X |  X |
 |  X |  X |  X |  X |  X |  X |  X |
 |  X |  X |  X |  X |  X |  X |  X |
 |  X |  X |  X |
