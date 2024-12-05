@@ -7,11 +7,11 @@ fn main() {
     let part: usize = std::env::args()
         .nth(1)
         .and_then(|s| s.parse().ok())
-        .unwrap_or_else(|| panic!("Usage: day01 partNumber inputPath"));
+        .unwrap_or_else(|| panic!("Usage: day03 partNumber inputPath"));
 
     let path = std::env::args()
         .nth(2)
-        .unwrap_or_else(|| panic!("Usage: day01 partNumber inputPath"));
+        .unwrap_or_else(|| panic!("Usage: day03 partNumber inputPath"));
 
     let file = File::open(path).unwrap();
     let reader = BufReader::new(file).lines();

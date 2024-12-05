@@ -7,11 +7,11 @@ fn main() {
     let part: usize = std::env::args()
         .nth(1)
         .and_then(|s| s.parse().ok())
-        .unwrap_or_else(|| panic!("Usage: day01 partNumber inputPath"));
+        .unwrap_or_else(|| panic!("Usage: day02 partNumber inputPath"));
 
     let path = std::env::args()
         .nth(2)
-        .unwrap_or_else(|| panic!("Usage: day01 partNumber inputPath"));
+        .unwrap_or_else(|| panic!("Usage: day02 partNumber inputPath"));
 
     let file = File::open(path).unwrap();
     let reader = BufReader::new(file).lines();
@@ -39,7 +39,7 @@ fn main() {
                 }
                 last_sign = (v1 - v2).signum();
             }
-            return true;
+            true
         }
         if is_safe(list.iter()) {
             sum += 1;
@@ -49,16 +49,11 @@ fn main() {
         if part != 2 {
             continue;
         }
-        
+
         // There should be a more efficient way to do this but let's just try
         // for every level
         for i in 0..list.len() {
-            if is_safe(
-                list.iter()
-                    .take(i)
-                    .chain(list.iter().skip(i + 1))
-                    .into_iter(),
-            ) {
+            if is_safe(list.iter().take(i).chain(list.iter().skip(i + 1))) {
                 println!("For {line} Ignore {}", i + 1);
                 sum += 1;
                 break;
