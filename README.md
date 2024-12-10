@@ -8,7 +8,7 @@
 |----|----|----|----|----|----|----|
 |    |    |    |    |    |    |  [1](day01/src/main.rs) |
 |  [2](day02/src/main.rs) |  [3](day03/src/main.rs) |  [4](day04/src/main.rs) |  [5](day05/src/main.rs) |  X |  X |  X |
-|  X |  X |  X |  X |  X |  X |  X |
+|  X | [10](day10/src/main.rs) |  X |  X |  X |  X |  X |
 |  X |  X |  X |  X |  X |  X |  X |
 |  X |  X |  X |
 

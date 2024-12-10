@@ -1,9 +1,7 @@
 use std::fs::File;
 use std::io::{BufRead, BufReader};
 
-use regex::Regex;
-
-fn is_xmas(v: &Vec<Vec<char>>, i: i32, j: i32, di: i32, dj: i32) -> bool {
+fn is_xmas(v: &[Vec<char>], i: i32, j: i32, di: i32, dj: i32) -> bool {
     v[i as usize][j as usize] == 'X'
         && v[(i + 1 * di) as usize][(j + 1 * dj) as usize] == 'M'
         && v[(i + 2 * di) as usize][(j + 2 * dj) as usize] == 'A'
